@@ -5,7 +5,7 @@ node_js:
   - lts/*
 before_install: export PATH="$PATH:$(yarn global bin)"
 install: yarn
-before_script: yarn global add electron-packager
+before_script: yarn global add electron-builder
 script: true
 after_script: yarn dist
 deploy:
