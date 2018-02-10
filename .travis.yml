@@ -13,6 +13,7 @@ node_js:
   - 2
   - 1
   - 0
+before_install: export PATH="$PATH:$(yarn global bin)"
 install: yarn
 script: true
 after_script: yarn dist
