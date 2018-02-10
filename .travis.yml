@@ -7,10 +7,12 @@ matrix:
       env:
         - ELECTRON_CACHE=$HOME/.cache/electron
         - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
-
+        - ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true
     - os: linux
       services: docker
       language: generic
+      env:
+        - ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true
 
 cache:
   directories:
