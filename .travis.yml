@@ -31,3 +31,11 @@ before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
 before_script: yarn global add electron-builder
 script: yarn dist
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  file_glob: true
+  file: dist/*
+  skip_cleanup: true
+  on:
+    tags: true
