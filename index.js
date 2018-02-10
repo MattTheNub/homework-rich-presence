@@ -5,7 +5,7 @@ const client = require('discord-rich-presence')('411707329336311808');
 
 var mainWindow;
 
-const startTimestamp = Date.now();
+const startTimestamp = new Date();
 
 global.info = {
     due: 'Unknown',
