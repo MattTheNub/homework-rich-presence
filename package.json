@@ -1,13 +1,16 @@
 {
     "name": "homework-rich-presence",
     "version": "0.1.0",
-    "description": "A simple Electron app for adding a homework status via Discord's rich presence.",
+    "description":
+        "A simple Electron app for adding a homework status via Discord's rich presence.",
     "main": "index.js",
     "repository": "https://github.com/MegaCode18/homework-rich-presence.git",
     "author": "Matt <mmszek3000@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "start": "electron ."
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder -mwl"
     },
     "devDependencies": {
         "electron": "1.8.2",
@@ -16,5 +19,8 @@
     "dependencies": {
         "discord-rich-presence": "^0.0.6",
         "jquery": "^3.3.1"
+    },
+    "build": {
+        "appId": "homework-rich-presence"
     }
 }
