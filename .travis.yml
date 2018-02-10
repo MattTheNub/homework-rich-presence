@@ -3,16 +3,6 @@ language: node_js
 node_js:
   - node
   - lts/*
-  - iojs
-  - 8
-  - 7
-  - 6
-  - 5
-  - 4
-  - 3
-  - 2
-  - 1
-  - 0
 before_install: export PATH="$PATH:$(yarn global bin)"
 install: yarn
 script: true
@@ -25,10 +15,3 @@ deploy:
   on:
     tags: true
     node: lts/*
-matrix:
-  allow_failiures:
-    - node_js: 3
-    - node_js: 2
-    - node_js: 1
-    - node_js: 0
-    - node_js: iojs
