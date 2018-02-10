@@ -50,7 +50,7 @@ function setActivity() {
         details: global.info.due,
         startTimestamp,
         largeImageKey: 'work_large',
-        smallImageKey: 'work_small'
+        smallImageKey: 'thonkang'
     });
 }
 
