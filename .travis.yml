@@ -1,0 +1,33 @@
+os: osx
+language: node_js
+node_js:
+  - node
+  - lts/*
+  - iojs
+  - 8
+  - 7
+  - 6
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+  - 0
+install: yarn
+script: true
+after_script: yarn dist
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  file:
+  skip_cleanup: true
+  on:
+    tags: true
+    node: lts/*
+matrix:
+  allow_failiures:
+    - node_js: 3
+    - node_js: 2
+    - node_js: 1
+    - node_js: 0
+    - node_js: iojs
