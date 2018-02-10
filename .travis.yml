@@ -27,5 +27,5 @@ before_install:
 
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
-
+before_script: yarn global add electron-builder
 script: yarn dist
