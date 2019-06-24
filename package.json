@@ -12,7 +12,7 @@
         "dist": "electron-builder -mwl"
     },
     "devDependencies": {
-        "electron": "1.8.3",
+        "electron": "1.8.8",
         "electron-packager": "^11.0.0"
     },
     "dependencies": {
