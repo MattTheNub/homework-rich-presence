@@ -17,7 +17,7 @@
     },
     "dependencies": {
         "discord-rich-presence": "^0.0.6",
-        "jquery": "^3.3.1"
+        "jquery": "^3.5.0"
     },
     "build": {
         "appId": "homework-rich-presence"
